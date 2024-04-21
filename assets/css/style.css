@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Regular.eot');
+    src: url('../fonts/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Regular.woff2') format('woff2'),
+         url('../fonts/Vazir-Regular.woff') format('woff'),
+         url('../fonts/Vazir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: Vazir;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+body::-webkit-scrollbar 
+, body *::-webkit-scrollbar
+{
+    display: none;
+}
+main{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.right {
+    position: fixed;
+    width: 16%;
+    background: #000;
+    height: 100%;
+}
+.profile{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 0% 0% 45% 45%;
+    height: 180px;
+    position: relative;
+    background: purple;
+}
+.profile>img{
+    position: absolute;
+    width: 110px;
+    border-radius: 50%;
+    height: 110px;
+    border: 15px solid black;
+    top: 60%;
+    background: red;
+    right: 25%;
+}
+.profile>h2{
+    position: absolute;
+    top: 130%;
+    font-size: 20px;
+    right: 30%;
+    color: white;
+}
+/* ---------------------------------------- */
+.listItem{
+    margin-top: 140px;
+    padding: 10px;
+    list-style: none;
+}
+.listItem>li{
+    margin: 10px;
+    border-radius: 4px;
+}
+.listItem>li>a{
+    color: white;
+    background: rgb(14, 14, 14);
+    text-decoration: none;
+    font-weight: 700;
+    padding-right: 25px !important;
+    border-radius: 4px;
+    padding: 15px;
+    display: block;
+}
+.active{
+    border-radius: 0 !important;
+    border-right: 2px solid rgb(0, 255, 0) !important;
+    background: rgb(41, 41, 41) !important;
+}
+.listItem>li>a:hover{
+    background: rgb(41, 41, 41);
+}   
+/* =================================================================== */
+.left{
+    margin-right: 16%;
+    width: 84%;
+    height: 100%;
+    padding: 0%;
+    background: green;
+}
+.left>div{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background: rgb(233, 233, 233);
+}
+.left h2
+{
+    position: relative;
+    padding: 0 10px;
+    font-size: 40px;
+    margin: 20px 40px;
+    width: fit-content;
+}
+.left h2::after {
+    position: absolute;
+    content: ' ';
+    background: #5dbeff;
+    border: 2px solid rgb(0, 73, 116);
+    box-shadow: 3px 3px 8px rgb(161, 217, 255);
+    width: 8px;
+    height: 8px;
+    left: 100%;
+    top: 46%;
+    transform: rotate(45deg);
+}
+.h_will-know{
+    color: red;
+    padding: 0 15px;
+    margin-right: 40px !important;
+}
+p{
+    margin: 10px 150px;
+    text-align: justify;
+    line-height: 35px;
+    font-size: 20px;
+}
